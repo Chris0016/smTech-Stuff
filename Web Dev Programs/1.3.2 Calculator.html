@@ -1,0 +1,53 @@
+<!--
+# - - - - - - - - - - - - - - - - #
+# SummerTech/Coditum Curriculum   #
+# Created by Matthew Baptist      #
+#                                 #
+# Report any bugs, issues, or     #
+# corrections to:                 #
+# matt@summertech.net             #
+#                                 #
+#                                 #
+# Module 1.3.2                    #
+# - - - - - - - - - - - - - - - - #
+
+#SUMMERTECH CONFIDENTIAL
+#COPYRIGHT (C) 2017 SUMMERTECH, INC. ALL RIGHTS RESERVED
+-->
+
+<html>
+  <head>
+    <title> Calculator </title>
+  </head>
+<body>
+  
+  <h1> Calculator </h1>
+  <p id="solution"></p>
+
+<script>
+  
+  var operand1 = eval(prompt("Enter the first operand."));
+  var operation = prompt("Enter the operation.");
+  var operand2 = eval(prompt("Enter the second operand."));
+  
+  var answer = null;
+  
+  if (operation === "+" || operation === "addition") {
+    answer = operand1 + operand2;
+  } else if (operation == "-" || operation == "subtraction") {
+    answer = operand1 - operand2;
+  } else if (operation == "*" || operation == "multiplication") {
+    answer = operand1 * operand2;
+  } else if (operation == "/" || operation == "division") {
+    answer = operand1 / operand2;
+  } else {
+    answer = null;
+  }
+
+  document.getElementById("solution").innerHTML= answer;
+  
+</script>
+
+</body>
+</html>
+

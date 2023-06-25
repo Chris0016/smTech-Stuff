@@ -1,0 +1,58 @@
+<!--
+ # - - - - - - - - - - - - - - - - #
+ # SummerTech/Coditum Curriculum   #
+ # Created by Matthew Baptist      #
+ #                                 #
+ # Report any bugs, issues, or     #
+ # corrections to:                 #
+ # matt@summertech.net             #
+ #                                 #
+ #                                 #
+ # Module 2.0.4                    #
+ # - - - - - - - - - - - - - - - - #
+ 
+ #SUMMERTECH CONFIDENTIAL
+ #COPYRIGHT (C) 2017 SUMMERTECH, INC. ALL RIGHTS RESERVED
+ -->
+
+<!-- This program uses the same structure as the right triangle. Copy and
+     pasting the square as a launch point is recommended. -->
+
+<html>
+  <head>
+    <title> Equilateral Triangle </title>
+  </head>
+  
+  <body>
+    <h1> Equilateral Triangle </h1>
+    <p id="Shape"> </p>
+    
+    <script>
+      /* This is a weird feature of browsers. Browsers collapse consecutive spaces.
+         The way to get around this behavior is to use the &nbsp character. To do 
+         this in a way that's not confusing to students, we put it in a variable
+         called space, and then use that variable to add spaces to our result string.
+       */
+      var space = "&nbsp";
+      
+      var size = prompt("How large would you like the right triangle to be?");
+      var triangle = "";
+      
+      /* Pay special attention to the spacing. Two spaces was necessary
+         to get the right look on the browser. */
+    
+      for (var i = 0; i < size; i++) {
+        for (var h = 0; h < size - i; h++) {
+          triangle += space + space;
+        }
+        for (var j = 0; j < i+1; j++) {
+          triangle += "*" + space + space;
+        }
+        triangle += "<br>";
+      }
+    
+      document.getElementById("Shape").innerHTML = triangle;
+
+    </script>
+  </body>
+</html>

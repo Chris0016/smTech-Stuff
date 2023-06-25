@@ -1,0 +1,56 @@
+<!--
+# - - - - - - - - - - - - - - - - #
+# SummerTech/Coditum Curriculum   #
+# Created by Matthew Baptist      #
+#                                 #
+# Report any bugs, issues, or     #
+# corrections to:                 #
+# matt@summertech.net             #
+#                                 #
+#                                 #
+# Module 1.4.2                    #
+# - - - - - - - - - - - - - - - - #
+
+#SUMMERTECH CONFIDENTIAL
+#COPYRIGHT (C) 2017 SUMMERTECH, INC. ALL RIGHTS RESERVED
+-->
+
+<html>
+  <head>
+    <title> Guessing Game </title>
+  </head>
+  
+<body>
+
+<script>
+  
+  var number = Math.floor(Math.random() * 100 + 1);
+  var repeat = true;
+  var tries = 0;
+  var answer = prompt("Enter a guess between 1-100");
+  
+  while (repeat === true && tries < 7) {
+  
+    if (number === eval(answer)) {
+      alert("Correct!");
+      repeat = false;
+    } else if (number < answer) {
+      answer = prompt(answer + "\nThat guess was too high, guess again.");
+      tries = tries + 1;
+    } else if (number > answer) {
+      answer = prompt(answer + "\nThat guess was too low, guess again.");
+      tries = tries + 1;
+    } else {
+      answer = prompt("Invalid input. Input a number between 1-100.");
+    }
+  }
+
+  if (tries === 7) {
+    alert("You took 7 tries. You lose.");
+  }
+
+</script>
+
+</body>
+</html>
+

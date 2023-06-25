@@ -1,0 +1,46 @@
+<!--
+ # - - - - - - - - - - - - - - - - #
+ # SummerTech/Coditum Curriculum   #
+ # Created by Matthew Baptist      #
+ #                                 #
+ # Report any bugs, issues, or     #
+ # corrections to:                 #
+ # matt@summertech.net             #
+ #                                 #
+ #                                 #
+ # Module 2.0.3                    #
+ # - - - - - - - - - - - - - - - - #
+ 
+ #SUMMERTECH CONFIDENTIAL
+ #COPYRIGHT (C) 2017 SUMMERTECH, INC. ALL RIGHTS RESERVED
+ -->
+
+<!-- This program uses the same structure as the square. Copy and 
+     pasting the square as a launch point is recommended. -->
+
+<html>
+  <head>
+    <title> Right Triangle </title>
+  </head>
+  
+  <body>
+    <h1> Right Triangle </h1>
+    <p id="Shape"> </p>
+    
+    <script>
+  
+      var size = prompt("How large would you like the right triangle to be?");
+      var triangle = "";
+      
+      for (var i = 0; i < size; i++) {
+        for (var j = 0; j < i+1; j++) {
+          triangle += "* ";
+        }
+        triangle += "<br>";
+      }
+    
+      document.getElementById("Shape").innerHTML = triangle;
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!--
+ # - - - - - - - - - - - - - - - - #
+ # SummerTech/Coditum Curriculum   #
+ # Created by Matthew Baptist      #
+ #                                 #
+ # Report any bugs, issues, or     #
+ # corrections to:                 #
+ # matt@summertech.net             #
+ #                                 #
+ #                                 #
+ # Module 2.2                      #
+ # - - - - - - - - - - - - - - - - #
+ 
+ #SUMMERTECH CONFIDENTIAL
+ #COPYRIGHT (C) 2017 SUMMERTECH, INC. ALL RIGHTS RESERVED
+ -->
+
+
+<html>
+  <head>
+    <title> Book Inventory </title>
+  </head>
+  
+  <body>
+    <h1> Book Inventory </h1>
+    
+    <script>
+      
+     var bookstore = [];
+     
+     bookstore.push([
+                     "Harry Potter and the Sorceror's Stone",
+                     "J.K. Rowling",
+                     5]);
+     
+     bookstore.push([
+                     "The Hunger Games",
+                     "Suzanne Collins",
+                     3]);
+                     
+     bookstore.push([
+                     "The Hobbit",
+                     "J.R.R Tolkien",
+                     2]);
+                     
+    console.log("Title: " + bookstore[0][0]);
+    console.log("Author: " + bookstore[0][1]);
+    console.log("Quantity: " + bookstore[0][2]);
+    
+    console.log("Title: " + bookstore[1][0]);
+    console.log("Author: " + bookstore[1][1]);
+    console.log("Quantity: " + bookstore[1][2]);
+    
+    console.log("Title: " + bookstore[2][0]);
+    console.log("Author: " + bookstore[2][1]);
+    console.log("Quantity: " + bookstore[2][2]);
+    
+    /* Now, have the students rewrite it with for loops. */
+    
+    /*
+    for (var i = 0; i < bookstore.length; i++) {
+      console.log("Title: " + bookstore[i][0]);
+      console.log("Author: " + bookstore[i][1]);
+      console.log("Quantity: " + bookstore[i][2]);
+    }
+    */
+    
+    
+    /* Note: Point out how much easier it is to add additional books with this second method.
+       Have the students add another 1-2 books and then see how they have to do no additional
+       work to print them all out.
+    */
+
+    /* Challenge: Can you write it using just one console.log and two for loops? (no breaks or newline) */
+    
+    /*
+    var property = ["Title: ", "Author: ", "Quantity: "];
+    for (var i = 0; i < bookstore.length; i++) {
+        for (var j = 0; j < bookstore[i].length; j++) {
+            console.log(property[j] + bookstore[i][j]);
+        }
+    }
+    */
+    
+    </script>
+  </body>
+</html>

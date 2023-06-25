@@ -1,0 +1,76 @@
+<!--
+ # - - - - - - - - - - - - - - - - #
+ # SummerTech/Coditum Curriculum   #
+ # Created by Matthew Baptist      #
+ #                                 #
+ # Report any bugs, issues, or     #
+ # corrections to:                 #
+ # matt@summertech.net             #
+ #                                 #
+ #                                 #
+ # Module 2.0.5                    #
+ # - - - - - - - - - - - - - - - - #
+ 
+ #SUMMERTECH CONFIDENTIAL
+ #COPYRIGHT (C) 2017 SUMMERTECH, INC. ALL RIGHTS RESERVED
+ -->
+
+<!-- This program uses the same structure as the Equilateral Triangle. Copy and
+     pasting the square as a launch point is recommended. -->
+
+<html>
+  <head>
+    <title> Diamond </title>
+  </head>
+  
+  <body>
+    <h1> Diamond </h1>
+    <p id="Shape"> </p>
+    
+    <script>
+      /* This is a weird feature of browsers. Browsers collapse consecutive spaces.
+         The way to get around this behavior is to use the &nbsp character. To do 
+         this in a way that's not confusing to students, we put it in a variable
+         called space, and then use that variable to add spaces to our result string.
+       */
+      var space = "&nbsp";
+      
+      var size = prompt("How large would you like the diamond to be?");
+      var diamond = "";
+      
+      /* Pay special attention to the spacing. Two spaces was necessary
+         to get the right look on the browser. */
+    
+      /* Top Half */
+    
+      for (var i = 0; i < size; i++) {
+        for (var h = 0; h < size - i; h++) {
+          diamond += space + space;
+        }
+        for (var j = 0; j < i+1; j++) {
+          diamond += "*" + space + space;
+        }
+        diamond += "<br>";
+      }
+    
+      /* Bottom Half */
+      
+      for (var i = 1; i < size; i++) { /* NOTE: i initialized to 1 */
+        for (var h = 0; h < i+1; h++) {
+          diamond += space + space;
+        }
+        for (var j = 0; j < size - i; j++) {
+          diamond += "*" + space + space;
+        }
+        diamond += "<br>";
+      }
+   
+      /* There are many alternative approaches to printing out one less 
+         rows in the second half. Any the student comes up with are acceptable.
+       */
+   
+      document.getElementById("Shape").innerHTML = diamond;
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!--
+ # - - - - - - - - - - - - - - - - #
+ # SummerTech/Coditum Curriculum   #
+ # Created by Matthew Baptist      #
+ #                                 #
+ # Report any bugs, issues, or     #
+ # corrections to:                 #
+ # matt@summertech.net             #
+ #                                 #
+ #                                 #
+ # Module 2.0.2                    #
+ # - - - - - - - - - - - - - - - - #
+ 
+ #SUMMERTECH CONFIDENTIAL
+ #COPYRIGHT (C) 2017 SUMMERTECH, INC. ALL RIGHTS RESERVED
+ -->
+
+<!-- This uses the basic idea of the challenge from last time. 
+     I would strongly encourage completion of the challenge before proceeding.
+ -->
+
+<html>
+  <head>
+    <title> Square </title>
+  </head>
+  
+  <body>
+    <h1> Square </h1>
+    <p id="Shape"> </p>
+    
+    <script>
+  
+      var size = prompt("How large would you like the square to be?");
+      var square = "";
+      
+      for (var i = 0; i < size; i++) {
+        for (var j = 0; j < size; j++) {
+          square += "* ";
+        }
+        square += "<br>";
+      }
+    
+      document.getElementById("Shape").innerHTML = square;
+
+    </script>
+  </body>
+</html>

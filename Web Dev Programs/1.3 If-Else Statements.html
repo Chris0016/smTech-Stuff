@@ -1,0 +1,49 @@
+<!--
+# - - - - - - - - - - - - - - - - #
+# SummerTech/Coditum Curriculum   #
+# Created by Matthew Baptist      #
+#                                 #
+# Report any bugs, issues, or     #
+# corrections to:                 #
+# matt@summertech.net             #
+#                                 #
+#                                 #
+# Module 1.3                      #
+# - - - - - - - - - - - - - - - - #
+
+#SUMMERTECH CONFIDENTIAL
+#COPYRIGHT (C) 2017 SUMMERTECH, INC. ALL RIGHTS RESERVED
+-->
+
+<html>
+  <head>
+    <title> If-Else Statements </title>
+  </head>
+<body>
+  
+  <h1> If-Else Statements </h1>
+  <p id="favorite-color"></p>
+
+<script>
+  
+  var favoriteColor = "blah";
+  
+  if (favoriteColor == "blue") {
+    document.body.style.backgroundColor = "lightblue";
+  } else if (favoriteColor == "red") {
+    document.body.style.backgroundColor = "lightcoral";
+  } else {
+    document.body.style.backgroundColor = "lightgreen";
+  }
+
+  document.getElementById("favorite-color").innerHTML = favoriteColor;
+
+</script>
+
+</body>
+</html>
+
+<!-- 
+    When teaching this, be sure to change what's stored in the favorite_color variable
+    so that students can see the different effects.
+ -->

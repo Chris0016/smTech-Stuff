@@ -1,0 +1,63 @@
+<!--
+ # - - - - - - - - - - - - - - - - #
+ # SummerTech/Coditum Curriculum   #
+ # Created by Matthew Baptist      #
+ #                                 #
+ # Report any bugs, issues, or     #
+ # corrections to:                 #
+ # matt@summertech.net             #
+ #                                 #
+ #                                 #
+ # Module 2.1.1                    #
+ # - - - - - - - - - - - - - - - - #
+ 
+ #SUMMERTECH CONFIDENTIAL
+ #COPYRIGHT (C) 2017 SUMMERTECH, INC. ALL RIGHTS RESERVED
+ -->
+
+
+<html>
+  <head>
+    <title> Shopping Cart </title>
+  </head>
+  
+  <body>
+    <h1> Shopping Cart </h1>
+    <p id="Shopping Cart"> </p>
+    
+    <script>
+      
+      var cart = [];
+      var shopping = true;
+      var output = "";
+      
+      while (shopping == true) {
+        var ans = prompt("Would you like to [a]dd to cart, [r]emove from cart, or [q]uit?\n"
+                         + output);
+        if (ans == "a") {
+          var item = prompt("What would you like to add?");
+          cart.push(item);
+        }
+        else if (ans == "r") {
+          var item = prompt("What would you like to remove?");
+          cart.remove(item);
+        }
+        else {
+          shopping = false;
+        }
+        
+        output = "Cart: ";
+        for (var i = 0; i < cart.length; i++) {
+          output += cart[i];
+          output += " ";
+        }
+        
+       
+      }
+    
+    document.getElementById("Shopping Cart").innerHTML = output;
+    
+    
+    </script>
+  </body>
+</html>

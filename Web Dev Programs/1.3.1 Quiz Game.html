@@ -1,0 +1,102 @@
+<!--
+# - - - - - - - - - - - - - - - - #
+# SummerTech/Coditum Curriculum   #
+# Created by Matthew Baptist      #
+#                                 #
+# Report any bugs, issues, or     #
+# corrections to:                 #
+# matt@summertech.net             #
+#                                 #
+#                                 #
+# Module 1.3.1                    #
+# - - - - - - - - - - - - - - - - #
+
+#SUMMERTECH CONFIDENTIAL
+#COPYRIGHT (C) 2017 SUMMERTECH, INC. ALL RIGHTS RESERVED
+-->
+
+<html>
+  <head>
+    <title> Quiz Game </title>
+  </head>
+<body>
+  
+  <h1> Quiz Game </h1>
+
+<script>
+  
+  var tries = 0;
+  var score = 0;
+  
+  console.log("Who was the second president of the United States.");
+  console.log("a) George Washington");
+  console.log("b) Abraham Lincoln");
+  console.log("c) Thomas Jefferson");
+  console.log("d) John Adams");
+
+  var answer = prompt("What is your answer?");
+  tries = tries + 1;
+  
+  if (answer == "d" || answer == "D" || answer == "John Adams") {
+    score = score + 1;
+    console.log("Correct! You have answered " + score + " out of " + tries + ".");
+  } else {
+    console.log("Incorrect! You have answered " + score + " out of " + tries + ".");
+    console.log();
+  }
+
+  console.log("Who was the sixteenth president of the United States.");
+  console.log("a) George Washington");
+  console.log("b) Abraham Lincoln");
+  console.log("c) Thomas Jefferson");
+  console.log("d) John Adams");
+
+  answer = prompt("What is your answer?");
+  tries = tries + 1;
+  
+  if (answer == "b" || answer == "B" || answer == "Abraham Lincoln") {
+    score = score + 1;
+    console.log("Correct! You have answered " + score + " out of " + tries + ".");
+  } else {
+    console.log("Incorrect! You have answered " + score + " out of " + tries + ".");
+    console.log();
+  }
+
+  console.log("Who was the first president of the United States.");
+  console.log("a) George Washington");
+  console.log("b) Abraham Lincoln");
+  console.log("c) Thomas Jefferson");
+  console.log("d) John Adams");
+
+  answer = prompt("What is your answer?");
+  tries = tries + 1;
+
+  if (answer == "a" || answer == "A" || answer == "George Washington") {
+    score = score + 1;
+    console.log("Correct! You have answered " + score + " out of " + tries + ".");
+  } else {
+    console.log("Incorrect! You have answered " + score + " out of " + tries + ".");
+    console.log();
+  }
+
+  console.log("Who was the third president of the United States.");
+  console.log("a) George Washington");
+  console.log("b) Abraham Lincoln");
+  console.log("c) Thomas Jefferson");
+  console.log("d) John Adams");
+
+  answer = prompt("What is your answer?");
+  tries = tries + 1;
+
+  if (answer == "c" || answer == "C" || answer == "Thomas Jefferson") {
+    score = score + 1;
+    console.log("Correct! You have answered " + score + " out of " + tries + ".");
+  } else {
+    console.log("Incorrect! You have answered " + score + " out of " + tries + ".");
+    console.log();
+  }
+
+</script>
+
+</body>
+</html>
